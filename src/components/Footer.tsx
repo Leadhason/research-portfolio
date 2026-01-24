@@ -23,7 +23,7 @@ export default function Footer() {
             <i className="far fa-envelope"></i>
           </a>
           <a href="/admin" className="hover:text-[#c15c2d] transition-colors">
-            <i className="fab fa-instagram">studio</i>
+            <i className="">admin panel</i>
           </a>
         </div>
 

@@ -20,7 +20,7 @@ export default function Sidebar({ data }: { data: any }) {
 
   return (
     <aside className="w-[300px] shrink-0 sticky top-0 h-screen z-[100] bg-linear-to-b from-[#1c1b29] to-[#15141f] border-r border-white/5 hidden lg:block">
-      <div className="h-full flex flex-col py-[50px] text-white">
+      <div className="h-full mb-5 flex flex-col py-[50px] text-white">
         <div className="w-[180px] h-[180px] rounded-full overflow-hidden mx-auto mb-[30px] border-2 border-white/10 shadow-[0_20px_40px_rgba(0,0,0,0.3)] bg-[#111] transition-all duration-300 hover:translate-y-[-8px] hover:scale-[1.02] hover:border-[#c15c2d] aspect-square shrink-0">
           {data.photo && (
             <img
