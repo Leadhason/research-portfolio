@@ -22,7 +22,7 @@ export default function Footer() {
           <a href="#" className="hover:text-[#c15c2d] transition-colors">
             <i className="far fa-envelope"></i>
           </a>
-          <a href="/admin" className="hover:text-[#c15c2d] transition-colors">
+          <a href="/admin" className="hover:text-[#c15c2d] transition-colors text-sm font-light">
             <i className="">admin panel</i>
           </a>
         </div>
