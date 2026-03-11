@@ -6,7 +6,7 @@ export default function Research({ data }: { data: any }) {
   return (
     <section
       id="research"
-      className="py-[100px] px-[20px] md:px-[60px] bg-linear-to-br from-white to-[#f9fafb] relative overflow-hidden"
+      className="py-[60px] md:py-[100px] px-[20px] md:px-[60px] bg-linear-to-br from-white to-[#f9fafb] relative overflow-hidden"
     >
       <div className="absolute top-[-10%] right-[-10%] w-[60%] h-[120%] pointer-events-none z-0">
         <svg
@@ -38,10 +38,10 @@ export default function Research({ data }: { data: any }) {
         </svg>
       </div>
 
-      <h2 className="text-[48px] font-heading mb-[20px] text-[#1c1b29]">
+      <h2 className="text-[36px] md:text-[48px] font-heading mb-[20px] text-[#1c1b29]">
         {data.title?.includes("&") ? (
           <>
-            {data.title.split("&")[0]} & <br />
+            {data.title.split("&")[0]} & <br className="hidden md:block" />
             <span className="text-[#c15c2d]">
               {data.title.split("&")[1]?.trim()}
             </span>
@@ -57,7 +57,7 @@ export default function Research({ data }: { data: any }) {
       <div className="flex flex-col gap-[40px] mt-[50px] relative z-[1]">
         {/* Featured Card */}
         {data.featured && (
-          <div className="bg-white/70 backdrop-blur-[20px] border border-[#c15c2d]/10 p-[30px] md:p-[60px] rounded-[40px] shadow-[0_30px_60px_rgba(0,0,0,0.05)] max-w-[900px] transition-all duration-300 hover:translate-y-[-8px] hover:shadow-[0_40px_80px_rgba(193,92,45,0.1)]">
+          <div className="bg-white/70 backdrop-blur-[20px] border border-[#c15c2d]/10 p-[25px] md:p-[60px] rounded-[30px] md:rounded-[40px] shadow-[0_30px_60px_rgba(0,0,0,0.05)] max-w-[900px] transition-all duration-300 hover:translate-y-[-8px] hover:shadow-[0_40px_80px_rgba(193,92,45,0.1)]">
             <div className="flex items-center gap-[15px] mb-[25px]">
               <span className="text-[11px] font-semibold tracking-[2px]">
                 {data.featured.date}
@@ -93,7 +93,7 @@ export default function Research({ data }: { data: any }) {
           {data.others?.map((paper: any, i: number) => (
             <div
               key={i}
-              className="bg-white p-[40px] rounded-[30px] border border-[#f1f1f1] transition-all duration-300 hover:shadow-lg"
+              className="bg-white p-[25px] md:p-[40px] rounded-[30px] border border-[#f1f1f1] transition-all duration-300 hover:shadow-lg"
             >
               <div className="text-[11px] font-semibold tracking-[2px] mb-[15px]">
                 {paper.date}

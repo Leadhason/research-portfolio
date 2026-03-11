@@ -1,6 +1,6 @@
 export default function Footer() {
   return (
-    <footer className="py-[60px] px-[30px] bg-white border-t border-gray-100">
+    <footer className="py-[40px] md:py-[60px] px-[30px] bg-white border-t border-gray-100">
       <div className="flex flex-col items-center gap-[30px]">
         <div className="flex items-center justify-center">
           <a
@@ -21,9 +21,6 @@ export default function Footer() {
           </a>
           <a href="#" className="hover:text-[#c15c2d] transition-colors">
             <i className="far fa-envelope"></i>
-          </a>
-          <a href="/admin" className="hover:text-[#c15c2d] transition-colors text-sm font-light">
-            <i className="">admin panel</i>
           </a>
         </div>
 

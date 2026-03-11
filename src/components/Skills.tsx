@@ -2,16 +2,19 @@ export default function Skills({ data }: { data: any[] }) {
   if (!data) return null;
 
   return (
-    <section id="skills" className="py-[100px] px-[20px] md:px-[60px] bg-white">
-      <h2 className="text-[48px] font-heading mb-[20px] text-[#1c1b29]">
-        Technical <br />
+    <section
+      id="skills"
+      className="py-[60px] md:py-[100px] px-[20px] md:px-[60px] bg-white"
+    >
+      <h2 className="text-[36px] md:text-[48px] font-heading mb-[20px] text-[#1c1b29]">
+        Technical <br className="hidden md:block" />
         <span className="text-[#c15c2d]">Competencies</span>
       </h2>
       <span className="inline-block border border-[#c15c2d] text-[#c15c2d] py-[6px] px-[25px] rounded-full text-[11px] uppercase tracking-[3px] mb-[30px]">
         SKILLS & EXPERTISE
       </span>
 
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-0 mt-[60px] border-t border-[#eee] pt-[60px]">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-0 mt-[40px] md:mt-[60px] border-t border-[#eee] pt-[40px] md:pt-[60px]">
         {data.map((skillGroup, i) => (
           <div
             key={i}

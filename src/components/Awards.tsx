@@ -4,17 +4,17 @@ export default function Awards({ data }: { data: any[] }) {
   return (
     <section
       id="awards"
-      className="py-[100px] px-[20px] md:px-[60px] bg-[#15141f] text-white"
+      className="py-[60px] md:py-[100px] px-[20px] md:px-[60px] bg-[#15141f] text-white"
     >
-      <h2 className="text-[48px] font-heading mb-[20px]">
-        Awards & <br />
+      <h2 className="text-[36px] md:text-[48px] font-heading mb-[20px]">
+        Awards & <br className="hidden md:block" />
         <span className="text-[#c15c2d]">Achievements</span>
       </h2>
       <span className="inline-block border border-[#c15c2d] text-[#c15c2d] py-[6px] px-[25px] rounded-full text-[11px] uppercase tracking-[3px] mb-[30px]">
         HONORS & RECOGNITION
       </span>
 
-      <div className="mt-[60px] space-y-[40px]">
+      <div className="mt-[40px] md:mt-[60px] space-y-[40px]">
         {data.map((award, i) => (
           <div
             key={i}
